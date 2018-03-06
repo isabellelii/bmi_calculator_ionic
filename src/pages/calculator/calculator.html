@@ -1,7 +1,7 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>calculator</ion-title>
+        <ion-title>Calculator</ion-title>
     </ion-navbar>
 
 </ion-header>
@@ -18,18 +18,18 @@
         </ion-item>
     </ion-list>
 
-    <div padding>
-        <button block ion-button (click)="calculateBMI()">Calculate</button>
+    <div>
+        <button ion-button full color="secondary" (click)="calculateBMI()">Calculate</button>
     </div>
 
     <ion-card *ngIf="bmiValue">
-            <ion-card-header>
-              BMI Calculation
-            </ion-card-header>
-            <ion-card-content>
-              <p>Person: Weight {{this.weight}} kg, Height {{this.height}} cm</p>
-              <p>BMI: {{bmiValue}}</p>
-              <p><strong>You are {{bmiMessage}}</strong></p>
-            </ion-card-content>
-          </ion-card>
-        </ion-content>
+        <ion-card-header>
+            BMI Calculation
+        </ion-card-header>
+        <ion-card-content>
+            <p>Person: Weight {{this.weight}} kg, Height {{this.height}} cm</p>
+            <p>BMI: {{bmiValue}}</p>
+            <p><strong>You are {{bmiMessage}}</strong></p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
